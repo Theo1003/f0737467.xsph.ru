@@ -3,11 +3,15 @@ body {
 }
 
 .menu a {
-    text-decoration: none;
-    color: dimgrey;
-    font-size: 30px;
-    font-family: "Bradley Hand", Arial;
-    font-style: italic;
+    text-decoration: none !important;
+    color: dimgrey !important;
+    font-size: 30px !important;
+    font-family: "Bradley Hand", "Arial" !important;
+    font-style: italic !important;
+}
+
+.menu a:hover {
+    color:black;
 }
 
 .menu li {
@@ -51,6 +55,7 @@ textarea {
     color:grey;
     font-size:15px;
     font-family: "Comic Sans MS", "Arial";
+    text-transform:capitalize;
 }
 
 .feedback input {
@@ -62,17 +67,67 @@ textarea {
    
 }
 
+.feedback input[type="email"] {
+    color:black;  
+}
+
+.feedback input[type="email"]:focus {
+    background-color:darkgrey;  
+}
+
+.feedback input[type="text"] {
+    text-transform: capitalize;
+}
+
+
 h1 {
     color:dimgrey;
     text-align: center;
     font-size: 55px;
-    font-family: "Bradley Hand", Arial;
+    font-family: "Bradley Hand", "Arial";
     font-style:oblique;
 }
 
-.photo
-{
-    border: 2px solid grey;
-   
+.photo {
+    border: 2px grey solid;
 }
+
+.photo:hover {
+    border: 2px #f8f8f8 solid;
+}
+
+table {
+    border: 1px grey solid;
+    border-spacing: 0;
+}
+
+table td, table th {
+    width: 25%;
+    height: 30px;
+    border: 1px grey solid;
+    text-align: center;
+    color:#393939;
+    font-style:oblique;
+}
+
+table th {
+    height: 40px;
+}
+
+.about_2:first-letter, .about_1:first-letter {
+    font-family: "Bradley Hand", "Arial";
+    font-size: 35px;
+    color: black;
+}
+
+a:link {
+    color:grey;
+}
+
+a:visited {
+    color:black;
+}
+
+
+
 

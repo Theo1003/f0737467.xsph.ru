@@ -1,53 +1,61 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Контакты</title>
-    <link rel="stylesheet" href="../styles/style.css">
-</head>
-<body>
-   <div class="menu">
-       <ul>
-           <li><a href="../index.html">Главная</a></li>
-           <li><a href="catalog.html">Каталог</a></li>
-           <li><a href="contacts.html">Контакты</a></li>  
-       </ul>
-   </div>
-   <hr>
-    <div>
-       <h1>Напишите нам</h1>
-       <form>
-            <fieldset class="feedback">
-                <p><u>Ваше Имя:</u></p>
-                <input type="text" name="" placeholder="Ваше Имя">
-                <br>
-                <p><u>Ваш Email:</u></p>
-                <input type="email" name="" placeholder="Введите Email">
-                <p><u>Тема Письма:</u></p>
-                <textarea name="" placeholder="Тема Письма"></textarea>
-                <p><u>Ваш Пол:</u></p>
-                <label for="man">Мужской</label>
-                <input type="radio" name="gender" id="man">
-                <br>
-                <label for="woman">Женский</label>
-                <input type="radio" name="gender" id="woman">
-                <br>
-                <label for="dont_know">Не определился</label>
-                <input type="radio" name="gender" id="dont_know">
-                <p>Согласен на обработку данных <input type="checkbox" name=""></p>
-                <input type="reset" name="" value="Очистить Все Окна">
-                <input type="submit" name="">
-            </fieldset>
-       </form>
-    </div>
-    <div>
-        <h2><big>Адрес</big></h2>
-        <p><b>Наш номер телефона:</b> +666</p>
-        <p><b>Наш Адрес:</b> Джомолунгма</p>
-        <p><b>Адрес электронной почты:</b> <a href="mailto:guitar-hub@666.ru">guitar-hub@666.ru</a></p>
-        <p><b>Мы на картах:</b></p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29793.821761977142!2d86.9120609231996!3d27.983686921310394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e854a215bd9ebd%3A0x576dcf806abbab2!2z0JTQttC-0LzQvtC70YPQvdCz0LzQsA!5e0!3m2!1sru!2sru!4v1668539420106!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Контакты</title>
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+        <div class="header">
+            <div class="logo"></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="../templates/catalog.html">Каталог</a></li>
+                    <li><a href="../templates/contacts.html">Контакты</a></li>  
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <h1>Напишите нам</h1>
+            <form>
+                <fieldset>
+                    <div class="feedback">
+                        <p><u>Ваше Имя:</u></p>
+                        <input type="text" name="" placeholder="Ваше Имя">
+                        <br>
+                        <p><u>Ваш Email:</u></p>
+                        <input type="email" name="" placeholder="Введите Email">
+                        <p><u>Тема Письма:</u></p>
+                    </div>
+                    <textarea name="" placeholder="Тема Письма"></textarea>
+                    <p><u>Ваш Пол:</u></p>
+                    <label for="man">Мужской</label>
+                    <input type="radio" name="gender" id="man">
+                    <br>
+                    <label for="woman">Женский</label>
+                    <input type="radio" name="gender" id="woman">
+                    <br>
+                    <label for="dont_know">Не определился</label>
+                    <input type="radio" name="gender" id="dont_know">
+                    <p>Согласен на обработку данных <input type="checkbox" name=""></p>
+                    <input type="reset" name="" value="Очистить Все Окна">
+                    <input type="submit" name="">
+                </fieldset>
+            </form>
+        </div>
+        <div>
+            <h2><big>Адрес</big></h2>
+            <p><b>Наш Адрес:</b> Джомолунгма</p>
+            <p><b>Адрес электронной почты: </b><span class="mail"><a href="mailto:guitar-hub@666.ru">guitar-hub@666.ru</a></span></p>
+            <p><b>Звоните: </b><span class="phone"><a href="tel:+66666666666">Во имя звонка</a></span></p>
+            <p><b>Мы на картах:</b></p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29793.821761977142!2d86.9120609231996!3d27.983686921310394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e854a215bd9ebd%3A0x576dcf806abbab2!2z0JTQttC-0LzQvtC70YPQvdCz0LzQsA!5e0!3m2!1sru!2sru!4v1668539420106!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <hr>
+        <div class="footer">
+            &copy; Все права защищены Федором
+        </div>
+    </body>
 </html>
