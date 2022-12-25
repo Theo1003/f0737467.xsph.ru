@@ -1,34 +1,60 @@
 <!DOCTYPE html>
-<html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <title>Guitar-hub</title>
-        <link rel="stylesheet" href="styles/style.css">
-    </head>
-    <body>
-        <div class="conteiner">
-            <div class="header">
-                <a href="index.html" class="logo"></a>
-                <div class="menu">
-                    <ul class="menu_1">
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="templates/catalog.html">Каталог</a></li>
-                    <li><a href="templates/contacts.html">Контакты</a>
-                        <ul class="contacts">
-                            <li><a href="templates/contacts.html#anketa">Анкета</a></li>
-                            <li><a href="templates/contacts.html#adress">Карта</a></li>
-                        </ul>
-                    </li>  
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guitar-hub</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<!--Start header-->
+    <div class="header">
+        <a href="index.html" class="logo"></a>
+        <div class="menu">
+            <ul class="menu_1">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="templates/catalog.html">Каталог</a></li>
+                <li><a href="templates/contacts.html">Контакты</a>
+                    <ul class="contacts">
+                        <li><a href="templates/contacts.html#anketa">Анкета</a></li>
+                        <li><a href="templates/contacts.html#adress">Карта</a></li>
                     </ul>
-                </div>
+                </li>  
+            </ul>
+        </div>
+        <div class="phone_block">
+            <a href="tel:+66666666666" class="number">+6(666)666-66-66</a>
+            <a href="" class="button_phone">заказать обратный звонок</a>
+        </div>
+    </div>
+<!--Stop header-->
+   
+<!--Start main-->
+    <div class="main">
+        <h1><strong>Guitar-hub</strong></h1>
+        <p>Добро пожаловать в магази ГИТАР ТРАХ. Лучшие малышки у нас.</p>
+
+        <div class="preview">
+            <div class="catalog_good">
+                <h2>GIBSON Les Paul Standard</h2>
+                <a href="templates/catalog/guitars/gibson.html"><img src="img/catalog/guitars/gibson.jpg" width="300" height="300" title="gibson" alt="gibson"><br>подробнее</a>
             </div>
-            <div class="main">
-                <h1><strong>Guitar-hub</strong></h1>
-                <p>Добро пожаловать в магази ГИТАР ТРАХ. Лучшие малышки у нас.</p>
+            <div class="catalog_good">
+                <h2>JACKSON Bengal Tiger</h2>
+                <a href="templates/catalog/guitars/jackson.html"><img src="img/catalog/guitars/jackson.jpg" width="300" height="300" title="jackson" alt="jackson"><br>подробнее</a>
             </div>
-            <div class="footer">
-                <p class="copy">&copy; Все права защищены Федором</p>
-            </div> 
-        </div>   
-    </body>
+            <div class="catalog_good">
+                <h2>IBANEZ Custom</h2>
+                <a href="templates/catalog/guitars/ibanez.html"><img src="img/catalog/guitars/ibanez.jpg" width="300" height="300" title="ibanez" alt="ibanez"><br>подробнее</a>
+            </div>  
+        </div>
+        <a href="templates/catalog.html" class="button_catalog">перейти в каталог</a>
+    </div>
+<!--Stop main-->
+
+<!--Start footer-->
+    <div class="footer">
+        <p class="copy">&copy; Все права защищены Федором</p>
+    </div>  
+<!--Stop footer-->
+</body>
 </html>

@@ -1,18 +1,23 @@
 * {
     margin: 0;
-    padding:0;
+    padding: 0;
 }
-
+html {
+    height: 100%;
+}
 body {
-     background-color:#f8f8f8;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color:#f8f8f8;
 }
 
-.conteiner {
-    width: 100%;
-    margin: 0 auto;
-}
+/*Start index*/
 
+/*Start header*/
 .header {
+    display: flex;
+    justify-content: space-between;
     height: 200px;
     border-bottom: 1px solid grey;
     background-image: url(../img/header.png);
@@ -25,27 +30,22 @@ body {
     height: 200px;
     background-image: url(../img/logo.png);
     background-size: contain;
-    margin-left: 40px;
-    float: left;
+    background-repeat: no-repeat;
 }
 
 a:link {
     color:grey;
 }
-
 a:visited {
     color:black;
 }
 
 .menu {
-    float:right;
-    width: 466px;
+    display: inline-flex;
+    margin-left: 10%;
+    margin-top: 2%;
     height: 68px;
-    margin-top: 45px;
-    margin-right: 30px;
 }
-
-
 .menu a {
     text-decoration: none;
     color:orange;
@@ -53,21 +53,17 @@ a:visited {
     font-family: "Bradley Hand", "Arial";
     font-style: italic;
 }
-
 .menu a:hover {
     color:gray;
 }
-
 .menu li {
     list-style-type: none;
     float: left;
     margin: 15px;
 }
-
 .contacts li {
     float: none;
 }
-
 .contacts {
     font-size:30px;
     font-family: "Bradley Hand", "Arial";
@@ -77,10 +73,299 @@ a:visited {
     padding: 0;
     display:none;
 }
-
 .menu_1>li:hover .contacts {
     display: block;
 }
+
+.phone_block {
+    display: flex;
+    margin-top: 2%;
+    margin-right: 1%;
+    height: 60%;
+    padding: 0.5%;
+    flex-direction: column;
+}
+.number {
+    margin:auto;
+    color: orange;
+    font-size: 30px;
+    font-family: "Bradley Hand", "Arial";
+    text-decoration: none;
+}
+.number:link {
+    color:orange;
+}
+.number:visited {
+    color:orange;
+}
+.button_phone {
+    margin:auto;
+    color: orange;
+    font-size: 20px;
+    font-family: "Bradley Hand", "Arial";
+    text-decoration: none;
+    background-color: grey;
+    padding: 2%;
+    border-radius: 3px;
+    box-shadow: 10px 5px 5px orange;
+}
+.button_phone:link {
+    color:orange;
+}
+.button_phone:visited {
+    color:orange;
+}
+.button_phone:hover {
+    transform: translate3d(0, 0.3em, -0.3em);
+    box-shadow: none;
+}
+/*Stop header*/
+
+/*Start main*/
+.main {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    flex-grow: 1;
+}
+.main > p {
+    text-align: center;
+    font-family: "Bradley Hand", "Arial";
+}
+
+h1 {
+    color:dimgrey;
+    align-self: center;
+    font-size: 55px;
+    font-family: "Bradley Hand", "Arial";
+    font-style:oblique;
+}
+
+.preview {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.button_catalog {
+    width: 90%;
+    margin:auto;
+    color: orange;
+    font-size: 40px;
+    font-family: "Bradley Hand", "Arial";
+    text-decoration: none;
+    text-align: center;
+    background-color: grey;
+    border-radius: 3px;
+    box-shadow: 10px 5px 5px orange;
+}
+.button_catalog:link {
+    color:orange;
+}
+.button_catalog:visited {
+    color:orange;
+}
+.button_catalog:hover {
+    transform: translate3d(0, 0.3em, -0.3em);
+    box-shadow: none;
+}
+/*Stop main*/
+
+/*Star footer*/
+.footer {
+    height: 150px;
+    border-top: 1px solid grey;
+    background:linear-gradient(to right, #eaeaea, #ede8e8);
+}
+
+.copy {
+    float:right;
+    margin-top: 65px;
+    margin-right: 30px;
+    margin-bottom: 5px;  
+}
+/*Stop footer*/
+
+/*Stop index*/
+
+/*Start catalog*/
+.breadcrb {
+    display: flex;
+    flex-wrap: wrap;
+    counter-reset: flag;
+    margin: 20px;
+}
+.breadcrb li {
+    display:flex;
+    list-style-type: none;
+    line-height: 36px;
+}
+.breadcrb li a,
+.breadcrb li span {
+    display: flex;
+    justify-content: space-around;
+    width: 220px;
+    background: grey;
+    color: white;
+    transition: all 0.5s;
+    text-decoration: none;
+    outline: none;
+    line-height: 36px;
+    padding: 0 10px 0 60px;
+    position: relative;
+    font-size: 17px;
+    font-family: "Bradley Hand", "Arial";  
+    border: 2px solid orange;
+    border-right: 0;
+    margin: 2px 0;   
+    border-radius: 8px 0 0 8px;
+}
+.breadcrb a:first-child {
+    padding-left: 46px;
+}
+.breadcrb a:hover{
+    background: orange;
+}
+.breadcrb a:hover:after {
+    background: orange;
+}
+.breadcrb a:after,
+.breadcrb span:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -18px;
+    width: 36px;
+    height: 36px;
+    transform: scale(0.7) rotate(45deg);
+    z-index: 1;
+    box-shadow: 2px -2px 0 2px orange;
+    border-radius: 0 5px 0 50px;
+    background: grey;
+    transition: all 0.5s;   
+}
+.breadcrb a:before,
+.breadcrb span:before {
+    content: counter(flag);
+    counter-increment: flag;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 17px;
+    line-height: 20px;
+    margin: 8px 0;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    font-weight: bold;
+    background: grey;
+    box-shadow: 0 0 0 1px #ccc;
+}
+
+.catalog {
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+.catalog_good {
+    font-family: "Bradley Hand", "Arial";
+    display: inline-block;
+    text-align: center;
+    margin-left: 30px; 
+    margin-bottom: 10px;
+}
+.catalog_good > a {
+    text-decoration: none;
+}
+/*Stop catalog*/
+
+/*Start contacts*/
+.feedback input {
+    width: 250px;
+    height: 20px;
+    padding: 0 7px;
+    color:grey;
+    font-size:15px;
+    font-family: "Comic Sans MS", "Arial";   
+}
+.feedback input[type="email"]:focus {
+    background-color:darkgrey;  
+    color:black;
+}
+.feedback input[type="text"] {
+    text-transform: capitalize;
+}
+
+input:focus {
+    outline: 2px solid grey;
+}
+input[type="button"] {
+    width: 100px;
+    height: 90px;
+    margin-top: 30px;
+    background-image: url(../img/buy.png);
+    background-size:cover;
+}
+input[type="button"]:hover {
+    box-shadow: 0 0 40px rgba(0, 0, 0, .2) inset;
+}
+input[type="button"]:active {
+    background-color: gray;
+}
+
+textarea {
+    width: 500px;
+    height: 200px;
+    padding: 0 7px;
+    color:grey;
+    font-size:15px;
+    font-family: "Comic Sans MS", "Arial";
+    text-transform:capitalize;
+    resize: none;
+}
+textarea:focus {
+    outline: 2px solid grey;
+}
+
+.pole {
+    display:inline-block;
+    width: 209px;
+}
+
+.adress_div {
+    margin-top: 20px;
+}
+.adress_div > h2 {
+    font-family: "Bradley Hand", "Arial";
+    font-style:oblique;
+     color:dimgrey;
+}
+
+iframe {
+    width: 100%;
+    height: 374px;
+}
+/*Stop contacts*/
+
+/*Star guitars*/
+.guitar {
+    display: flex;
+}
+.goods {
+    margin-right: 30px;
+}
+
+.photo {
+    outline: 2px grey solid;
+}
+.photo:hover {
+    outline: none;
+}
+
 .headlines {
     color: black;
     font-size: 18px;
@@ -88,19 +373,10 @@ a:visited {
     background-color:#eaeaea;
 }
 
-.main {
-    padding: 1%;
+.about_block {
+    width: 100%;
+    
 }
-
-.goods {
-    float:left;
-    margin-right: 30px;
-}
-
-.goods_char {
-    clear: both;
-}
-
 .about_1 {
     margin-top: 30px;
     color:#707070;
@@ -109,12 +385,8 @@ a:visited {
     line-height: 16px;
 }
 
-.about_2 {
-    color:#484343;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
+.goods_char {
+    clear: both;
 }
 
 .char {
@@ -127,59 +399,23 @@ a:visited {
     list-style-image: url(../img/marker.png);
 }
 
-textarea {
-    width: 500px;
-    height: 200px;
-    color:grey;
-    font-size:15px;
-    font-family: "Comic Sans MS", "Arial";
-    text-transform:capitalize;
-    resize: none;
+.about_2 {
+    color:#484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
 }
-
-textarea:focus {
-    outline: 2px solid grey;
-}
-
-.feedback input {
-    width: 250px;
-    height: 20px;
-    color:grey;
-    font-size:15px;
-    font-family: "Comic Sans MS", "Arial";   
-}
-
-.feedback input[type="email"]:focus {
-    background-color:darkgrey;  
-    color:black;
-}
-
-.feedback input[type="text"] {
-    text-transform: capitalize;
-}
-
-
-h1 {
-    color:dimgrey;
-    text-align: center;
-    font-size: 55px;
+.about_2:first-letter, .about_1:first-letter {
     font-family: "Bradley Hand", "Arial";
-    font-style:oblique;
-}
-
-.photo {
-    outline: 2px grey solid;
-}
-
-.photo:hover {
-    outline: none;
+    font-size: 35px;
+    color: black;
 }
 
 table {
     border: 1px grey solid;
     border-spacing: 0;
 }
-
 table td, table th {
     width: 25%;
     height: 30px;
@@ -188,74 +424,7 @@ table td, table th {
     color:#393939;
     font-style:oblique;
 }
-
 table th {
     height: 40px;
 }
-
-.about_2:first-letter, .about_1:first-letter {
-    font-family: "Bradley Hand", "Arial";
-    font-size: 35px;
-    color: black;
-}
-
-.footer {
-    height: 150px;
-    border-top: 1px solid grey;
-    background:linear-gradient(to right, #eaeaea, #ede8e8);
-}
-
-.copy {
-    float:right;
-    margin-top: 65px;
-    margin-right: 30px;
-    
-}
-input:focus {
-    outline: 2px solid grey;
-}
-
-input[type="button"] {
-    width: 100px;
-    height: 90px;
-    margin-top: 30px;
-    background-image: url(../img/buy.png);
-    background-size:cover;
-}
-
-input[type="button"]:hover {
-    box-shadow: 0 0 40px rgba(0, 0, 0, .2) inset;
-}
-
-input[type="button"]:active {
-    background-color: gray;
-}
-
-.catalog {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-.catalog_good {
-    display: inline-block;
-    text-align: center;
-    margin-left: 30px; 
-}
-
-iframe {
-    width: 100%;
-    height: 374px;
-}
-
-.pole {
-    display:inline-block;
-    width: 209px;
-}
-
-
-
-
-
-
-
-
+/*Stop guitars*/
