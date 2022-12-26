@@ -73,8 +73,14 @@ a:visited {
     padding: 0;
     display:none;
 }
+.menu_1 {
+    display: flex;
+}
 .menu_1>li:hover .contacts {
     display: block;
+}
+.menu_2 {
+    height: 100px;
 }
 
 .phone_block {
@@ -100,6 +106,7 @@ a:visited {
 }
 .button_phone {
     margin:auto;
+    text-align: center;
     color: orange;
     font-size: 20px;
     font-family: "Bradley Hand", "Arial";
